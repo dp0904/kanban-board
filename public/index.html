@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Kanban Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kanban Board</h1>
+        <button id="add-task-btn">+ Add Task</button>
+    </header>
+
+    <main class="board">
+        <div class="column" id="todo" data-status="todo">
+            <div class="column-header">
+                <h2>To Do</h2>
+                <span class="task-count" id="todo-count">0</span>
+            </div>
+            <div class="task-list" id="todo-list"></div>
+        </div>
+        <div class="column" id="in_progress" data-status="in_progress">
+            <div class="column-header">
+                <h2>In Progress</h2>
+                <span class="task-count" id="in-progress-count">0</span>
+
+            </div>
+            <div class="task-list" id="in-progress-list"></div>
+        </div>
+        <div class="column" id="done" data-status="done">
+            <div class="column-header">
+                <h2>Done</h2>
+                <span class="task-count" id="done-count">0</span>
+            </div>
+            <div class="task-list" id="done-list"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
